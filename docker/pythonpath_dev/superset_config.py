@@ -99,6 +99,7 @@ class CeleryConfig(object):
 
 
 CELERY_CONFIG = CeleryConfig
+SECRET_KEY = 'si/a5HXC/v03VfJ9Bf4EfnfOeXVhoDC6vWICtHZx5bz4BO3Cxb6ZH9nJ'
 
 FEATURE_FLAGS = {"ALERT_REPORTS": True}
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = True
@@ -107,6 +108,20 @@ WEBDRIVER_BASEURL = "http://superset:8088/"
 WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 
 SQLLAB_CTAS_NO_LIMIT = True
+
+FEATURE_FLAGS = {
+    "ALERT_REPORTS": True,
+    "DRILL_BY": True,
+    "DRILL_TO_DETAIL": True,
+    "HORIZONTAL_FILTER_BAR": True,
+    "DASHBOARD_CROSS_FILTERS": True,
+    "ENABLE_TEMPLATE_PROCESSING": True,
+    "TAGGING_SYSTEM": True,
+    "HORIZONTAL_FILTER_BAR": True,
+    "ENABLE_EXPLORE_DRAG_AND_DROP": True,
+    "DASHBOARD_RBAC": True,
+    "LISTVIEWS_DEFAULT_CARD_VIEW": True,
+}
 
 #
 # Optionally import superset_config_docker.py (which will have been included on
